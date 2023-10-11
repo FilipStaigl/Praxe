@@ -1,5 +1,5 @@
 const article = document.querySelector("#content");
- const button = document.querySelector("#read-more");
+const button = document.querySelector("#read-more");
 
 button.addEventListener("click", readMore);
 
