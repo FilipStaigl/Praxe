@@ -33,6 +33,8 @@
 
 <button onclick="cahngeRadius()">změnit na kruh</button>
 
+<button onclick="undo()">vše zrušit</button>
+
 <script>
 function changeColor() {
     var box = document.getElementById("box");
@@ -48,6 +50,13 @@ function cahngeRadius() {
     var box = document.getElementById("box");
     box.style.borderRadius = "500px","500px", "0px";
     box.style.width = "19%";
+}
+
+function undo() {
+    var box = document.getElementById("box");
+    box.style.backgroundColor = "";
+    box.style.width = "";
+    box.style.borderRadius = "";
 }
 
 </script>
