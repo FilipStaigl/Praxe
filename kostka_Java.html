@@ -31,6 +31,8 @@
 
 <button onclick="changeWidth()"> změnit šířku</button>
 
+<button onclick="cahngeRadius()">změnit na kruh</button>
+
 <script>
 function changeColor() {
     var box = document.getElementById("box");
@@ -40,6 +42,11 @@ function changeColor() {
 function changeWidth() {
     var box = document.getElementById("box");
     box.style.width = "20%";
+}
+
+function cahngeRadius() {
+    var box = document.getElementById("box");
+    box.style.borderRadius = "300px","200px", "0px";
 }
 
 </script>
