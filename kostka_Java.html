@@ -7,7 +7,7 @@
 
     <style>
         #box{
-            background: yellow;
+            background: red;
             width: 33%;
             float: left;
         }
@@ -27,7 +27,7 @@
 <p></p><br>
 </div>
 
-<button onclick="changeColor()"> změnit barvu</button>
+<button id="btn" onclick="changeColor()"> změnit barvu</button>
 
 <button onclick="changeWidth()"> změnit šířku</button>
 
@@ -36,10 +36,20 @@
 <button onclick="undo()">vše zrušit</button>
 
 <script>
-function changeColor() {
-    var box = document.getElementById("box");
-    box.style.backgroundColor="red";
-}
+const btn = document.getElementById('btn');
+
+btn.addEventListener('click', function onClick(event) {
+    const backgroundColor = box.style.backgroundColor;
+
+    if (backgroundColor === 'red') {
+      box.style.backgroundColor = 'green';
+    } else if (backgroundColor === 'green') {
+      box.style.backgroundColor = 'blue';
+    } else {
+      box.style.backgroundColor = 'red';
+    }
+  });
+  
 
 function changeWidth() {
     var box = document.getElementById("box");
@@ -49,7 +59,7 @@ function changeWidth() {
 function cahngeRadius() {
     var box = document.getElementById("box");
     box.style.borderRadius = "500px","500px", "0px";
-    box.style.width = "19%";
+    box.style.width = "15%";
 }
 
 function undo() {
