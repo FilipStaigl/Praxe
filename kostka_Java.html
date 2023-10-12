@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kostka</title>
+
+    <style>
+        #box{
+            background: yellow;
+            width: 33%;
+            float: left;
+        }
+
+    </style>
+</head>
+<body>
+
+<div id="box"> 
+<p></p><br>
+<p></p><br>
+<p></p><br>
+<p></p><br>
+<p></p><br>
+<p></p><br>
+<p></p><br>
+<p></p><br>
+</div>
+
+<button onclick="changeColor()"> změnit barvu</button>
+
+<button onclick="changeWidth()"> změnit šířku</button>
+
+<script>
+function changeColor() {
+    var box = document.getElementById("box");
+    box.style.backgroundColor="green";
+}
+
+function changeWidth() {
+    var box = document.getElementById("box");
+    box.style.width = "20%";
+}
+
+</script>
+
+
+</body>
+</html>
